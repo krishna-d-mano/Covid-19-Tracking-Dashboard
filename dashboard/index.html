@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Covid-19 Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+  <input type="checkbox" id="check">
+
+  <header>
+    <label for="check"><i class="fa fa-bars" aria-hidden="true" id="sidebar_btn"></i></label>
+    <div class="left_area">
+      <h3><a href="index.html">Covid-19 <span>Dashboard</span></a></h3>
+    </div>
+    <div class="right_area">
+      <a href="https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNREZqY0hsNUVnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen" class="news_btn">COVID-19 NEWS</a>
+    </div>
+  </header>
+
+  <div class="mobile_nav">
+    <div class="nav_bar">
+      <img src="covid.jpg" class="mobile_covid" alt="">
+      <i class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items">
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+        <a href="data.html"><i class="fa fa-globe" aria-hidden="true"></i><span>Data</span></a>
+        <a href="cases.html"><i class="fa fa-database" aria-hidden="true"></i><span>Cases</span></a>
+        <a href="stats_per_day.html"><i class="fa fa-calendar" aria-hidden="true"></i><span>Stats Per Day</span></a>
+        <a href="table.html"><i class="fa fa-table" aria-hidden="true"></i><span>Today's Data (Table)</span></a>
+        <a href="yesterday_table.html"><i class="fa fa-fast-backward" aria-hidden="true"></i><span>Yesterday's Data (Table)</span></a>
+        <a href="info.html"><i class="fa fa-info-circle" aria-hidden="true"></i><span>Info</span></a>
+        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>News</span></a>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="covid">
+      <img src="covid.jpg" class="covid_img" alt="">
+      <h4>COVID-19</h4>
+    </div>
+    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></i><span>Home</span></a>
+    <a href="data.html"><i class="fa fa-globe" aria-hidden="true"></i><span>Data</span></a>
+    <a href="cases.html"><i class="fa fa-database" aria-hidden="true"></i><span>Cases</span></a>
+    <a href="stats_per_day.html"><i class="fa fa-calendar" aria-hidden="true"></i><span>Stats Per Day</span></a>
+    <a href="table.html"><i class="fa fa-table" aria-hidden="true"></i><span>Today's Data (Table)</span></a>
+    <a href="yesterday_table.html"><i class="fa fa-fast-backward" aria-hidden="true"></i><span>Yesterday's Data (Table)</span></a>
+    <a href="info.html"><i class="fa fa-info-circle" aria-hidden="true"></i><span>Info</span></a>
+    <a href="https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNREZqY0hsNUVnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen"><i class="fa fa-newspaper" aria-hidden="true"></i><span>News</span></a>
+  </div>
+
+  <div class="content">
+      <div class="card">
+          <h1>Worldwide Total Cases</h1>
+          <h3>20,229,983</h3>
+        </div>
+        <div class="card">
+            <h1>Worldwide Total Deaths</h1>
+            <h3>737,640</h3>
+        </div>
+        <div class="card">
+              <h1>Worldwide Total Recovered</h1>
+              <h3>13,037,302</h3>
+        </div>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.nav_btn').click(function(){
+      $('.mobile_nav_items').toggleClass('active');
+    });
+  });
+  </script>
+
+</body>
+</html>
